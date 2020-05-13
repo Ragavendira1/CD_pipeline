@@ -3,8 +3,8 @@
 import sys
 import os
 import unittest
-#import app
-from . import app
+import app
+#from . import app
 class BasicTests(unittest.TestCase):
 
     # execute before each test
