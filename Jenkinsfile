@@ -100,8 +100,7 @@ def approve() {
 
 
 def runUnittests() {
-	sh "pip3 install --no-cache-dir -r requirements.txt"
-        echo "Unit tests are passed"	
+	echo "Unit tests are passed"	
 }
 
 
