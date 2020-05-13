@@ -100,7 +100,7 @@ def approve() {
 
 
 def runUnittests() {
-	sh "pip3 install --no-cache-dir -r ./CD_pipeline/requirements.txt"
+	sh "pip3 install --no-cache-dir -r ./requirements.txt"
 	sh "python3 ./CD_pipeline/tests/test_flask_app.py"
 }
 
