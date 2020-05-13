@@ -21,18 +21,18 @@ pipeline {
 		  parallel {
 		  stage ('building Redhat app')
 		  {
-            steps { buildApp() }
+                    steps { buildApp() }
 		  }
-		  stage ('building Ubuntu app'
+		  stage ('building Ubuntu app')
 		  {
 		    steps { buildApp() }
 			
 		   }
-		   stage ('building Windows app'
+		   stage ('building Windows app')
 		   {
 		     steps { buildApp() }
 			}
-			}
+		   }
 			}
 
         stage("Deploy - Dev") {
