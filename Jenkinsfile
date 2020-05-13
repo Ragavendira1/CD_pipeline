@@ -105,5 +105,5 @@ def runUnittests() {
 
 
 def runUAT(port) {
-	sh "tests/runUAT.sh ${port}"
+	sh "./tests/runUAT.sh ${port}"
 }
