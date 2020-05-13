@@ -8,7 +8,7 @@ pipeline {
     }
 
 	environment {
-		PYTHONPATH = "${WORKSPACE}/cd_pipeline"
+		PYTHONPATH = "${WORKSPACE}/CD_pipeline"
 	}
 
     stages {
@@ -100,11 +100,11 @@ def approve() {
 
 
 def runUnittests() {
-	sh "pip3 install --no-cache-dir -r ./cd_pipeline/requirements.txt"
-	sh "python3 ./cd_pipeline/tests/test_flask_app.py"
+	sh "pip3 install --no-cache-dir -r ./CD_pipeline/requirements.txt"
+	sh "python3 ./CD_pipeline/tests/test_flask_app.py"
 }
 
 
 def runUAT(port) {
-	sh "cd_pipeline/tests/runUAT.sh ${port}"
+	sh "CD_pipeline/tests/runUAT.sh ${port}"
 }
