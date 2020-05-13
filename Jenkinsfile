@@ -27,10 +27,8 @@ pipeline {
 
 // steps
 def buildApp() {
-	dir ('cd_pipeline' ) {
-		def appImage = docker.build("rragavendira/myapp:${BUILD_NUMBER}")
+	 def appImage = docker.build("rragavendira/myapp:${BUILD_NUMBER}")
 	}
-}
 
 
 def deploy(environment) {
